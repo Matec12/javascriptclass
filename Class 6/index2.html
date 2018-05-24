@@ -1,0 +1,215 @@
+<html>
+    <head>
+
+    </head>
+
+    <body>
+        
+    </body>
+
+    <script>
+/*A school name “Matec Secondary School” request an application to help calculate their student grades for three subjects (Mathematics,
+ Physics and Chemistry) .
+The grades are structured as:
+A: 100> score >89
+B: 89> score >60
+C: 60> score >50
+D: 50> score >40
+F: <40.
+
+For every student that uses the application to check there grades. The flow should be as follow:
+
+1. Display a prompt to welcome the student to the application arena and ask for the student name. E.g “welcome to .... school”
+2. Display a confirm with message “are you ready to grade your score” if yes let user proceed to step 3 else show “application terminated”.
+3. For each subjects, display a prompt to ask for student score. E.g “ what’s your score in mathematics “
+4. For every student subject score . Display remarks for them. E.g “Physics: Excellent”
+5. Finally output the subject which the student has the highest score. If there exist more than one scenario output all of the subjects 
+
+Remarks
+A: excellent 
+B: very good 
+C: good
+D: fair
+F: poor
+
+1000pts
+Goodluck
+*/
+/*
+var name=prompt("Welcome to Matec Secondary School", "Student's Name");
+if( name != "null")
+{var result=confirm("are you ready to grade your score?")
+if(result){
+    var score=prompt ("What's your score in Mathematics", "Input Number");
+     score=Number(score)
+
+    if(score == "null"){
+    alert("not a number")
+    }
+    else if (score <= 40) {
+        alert(  "Mathematics: poor " );
+        }
+    else if (score <= 50 ) {
+        alert(  "Mathematics: fair" );
+        }
+    else if (score <= 60   ) {
+        alert(  "Mathematics: good" );
+        }
+    else if ( score <= 89) {
+        alert(  "Mathematics: very good" );
+        }
+    else if ( score <= 100 ) {
+        alert(  "Mathematics: excellent" );
+        }
+
+    else {
+    alert("not a number");
+    }
+
+    var score=prompt ("your score in Physics", "Input Number");
+     score=Number(score) 
+
+    if(score == null){
+    alert("not a number")
+    }
+    if (score <= 40) {
+        alert(  "Physics: poor " );
+        }
+    else if (score <= 50 ) {
+        alert(  "Physics: fair" );
+        }
+    else if (score <= 60   ) {
+        alert(  "Physics: good" );
+        }
+    else if ( score <= 89) {
+        alert(  "Physics: very good" );
+        }
+    else if ( score <= 100 ) {
+        alert(  "Physics: excellent" );
+        }
+    
+    else{
+    alert("not a number")
+    } 
+
+
+    var score=prompt ("your score in Chemistry", "Input Number");
+     score=Number(score)
+
+    if(score == null){
+    alert("not a number")
+    }
+    else if (score <= 40) {
+        alert(  "Chemistry: poor " );
+        }
+    else if (score <= 50 ) {
+        alert(  "Chemistry: fair" );
+        }
+    else if (score <= 60   ) {
+        alert(  "Chemistry: good" );
+        }
+    else if ( score <= 89) {
+        alert(  "Chemistry: very good" );
+        }
+    else if ( score <= 100 ) {
+        alert(  "Chemistry: excellent" );
+        }  
+
+    else{
+    alert("not a number")
+    }                       
+}
+    else{
+    alert("application terminated");
+}
+}
+
+else{
+    alert("Canceled")
+}
+*/
+
+/* 
+Task 3
+
+A client requires an application to help determine the ranks in a group of four football teams. 
+The criteria to use in ranking these teams (in a particular order) are 
+
+- Points Earned
+- Goal Difference
+
+System Flow
+
+Given a group with team A, B, C, D. Team A will only rank 
+first if it had superior Points and
+Goal Difference to Team B-D and vice-versa. 
+Make Provisions for a tie where any of the teams have
+the same Goal Difference and Points. In case of a tie,
+alert the name of the teams that tied and
+the positions that each would share. 
+
+Good Luck
+*/
+
+//Welcome team to Group
+
+var teamName = prompt("Welcome to Group A","your team's name");
+
+//Ask readiness to check rank
+
+if(userName = "team A"){
+
+    var readyToCheckRank = confirm(teamName + ",  Are you ready to check your rank")
+
+    if(readyToCheckRank){
+
+        var teamAPointsEarned = prompt(teamName + ", Input Points Earned", 0);
+        
+        var teamAGoalDifference = prompt(teamName + ", Input Goal Difference", 0);
+    }
+}
+
+else if(teamName = "team B"){
+    
+    var readyToCheckRank = confirm(teamName + ",  Are you ready to check your rank")
+    
+    if(readyToCheckRank){
+        
+        var teamBPointsEarned = prompt(teamName + ", Input Points Earned", 0);
+        
+        var teamBGoalDifference = prompt(teamName + ", Input Goal Difference", 0);
+    }
+}
+
+else if(teamName = "team C"){
+    
+    var readyToCheckRank = confirm(teamName + ",  Are you ready to check your rank")
+    
+    if(readyToCheckRank){
+        
+        var teamCPointsEarned = prompt(teamName + ", Input Points Earned", 0);
+        
+        var teamCGoalDifference = prompt(teamName + ", Input Goal Difference, 0");
+    }
+}
+    
+else if(teamName = "team D"){
+    
+    var readyToCheckRank = confirm(teamName + ",  Are you ready to check your rank")
+    
+    if(readyToCheckRank){    
+        var teamDPointsEarned = prompt(teamName + ", Input Points Earned", 0);
+        
+        var teamDGoalDifference = prompt(teamName + ", Input Goal Difference", 0);
+        }
+
+}
+
+
+
+
+
+
+
+    </script>
+</html>                                                                

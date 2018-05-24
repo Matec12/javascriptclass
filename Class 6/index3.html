@@ -1,0 +1,259 @@
+<html>
+    <head>
+
+    </head>
+
+    <body>
+        
+    </body>
+
+    <script>
+/*A client requires an application to help determine the ranks in a group of four football teams. 
+The criteria to use in ranking these teams (in a particular order) are 
+
+- Points Earned
+- Goal Difference
+
+System Flow
+
+Given a group with team A, B, C, D. Team A will only rank 
+first if it had superior Points and
+Goal Difference to Team B-D and vice-versa. 
+Make Provisions for a tie where any of the teams have
+the same Goal Difference and Points. In case of a tie,
+alert the name of the teams that tied and
+the positions that each would share. 
+
+Good Luck
+*/     
+
+let userName = prompt("Welcome to group A","Input username");
+
+//Ask readiness to grade score
+if(userName){
+
+    let readyToCheckRank = confirm( userName +"!, Are you ready to check rank?")
+
+    if(readyToCheckRank){
+        //Collect points earned  by all teams
+
+        let teamAPointsEarned = prompt( "input point earned for team A");
+
+        let teamAGoalDiff = prompt( "input goal difference for team A");
+
+        let teamBPointsEarned  =prompt( "input point earned for team B");
+
+        let teamBGoalDiff = prompt( "input goal difference for team B");
+
+        let teamCPointsEarned  =prompt( " input point earned  for team C");
+
+        let teamCGoalDiff = prompt( "input goal difference for team C");
+
+        let teamDPointsEarned  =prompt(" input point earned for team D");
+
+        let teamDGoalDiff = prompt( "input goal difference for team D");
+
+        
+        let numberisedteamAPointsEarned = +teamAPointsEarned;
+
+        let numberisedteamAGoalDiff = +teamAGoalDiff;
+
+        let numberisedteamBPointsEarned = +teamBPointsEarned;
+
+        let numberisedteamBGoalDiff = +teamBGoalDiff;
+
+        let numberisedteamCPointsEarned= +teamCPointsEarned;
+
+        let numberisedteamCGoalDiff = +teamCGoalDiff;
+
+        let numberisedteamDPointsEarned= +teamDPointsEarned;
+
+        let numberisedteamDGoalDiff = +teamDGoalDiff;
+
+        
+
+        //team Points Earned Feedback
+
+        if(numberisedteamAPointsEarned ){
+            alert("Team A earned " + numberisedteamAPointsEarned + "points")
+        }
+
+        if(numberisedteamAGoalDiff ){
+            alert("Team A had a goal difference of " + numberisedteamAGoalDiff)
+        }        
+
+        if(numberisedteamBPointsEarned != "null"){
+            alert("Team B earned " + numberisedteamBPointsEarned + "points")
+        }
+
+        if(numberisedteamBGoalDiff != "null"){
+            alert("Team B had a goal difference of " + numberisedteamBGoalDiff)
+        }     
+
+        if(numberisedteamCPointsEarned != "null"){
+            alert("Team C earned " + numberisedteamCPointsEarned + "points")
+        }
+
+        if(numberisedteamCGoalDiff != "null"){
+            alert("Team C had a goal difference of " + numberisedteamCGoalDiff)
+        }     
+
+        if(numberisedteamDPointsEarned != "null"){
+            alert("Team D earned " + numberisedteamDPointsEarned + "points")
+        }
+
+        if(numberisedteamDGoalDiff != "null"){
+            alert("Team D had a goal difference of " + numberisedteamDGoalDiff)
+        }     
+
+        //Gets Highest points
+
+        if(numberisedteamAPointsEarned  > numberisedteamBPointsEarned){
+                if(numberisedteamAPointsEarned > numberisedteamCPointsEarned){
+                    if(numberisedteamAPointsEarned > numberisedteamDPointsEarned){
+                    alert("Team A is First")
+                    }
+                
+                }
+        }
+// Equal points earned but unequal goal difference
+
+        if(numberisedteamAPointsEarned == numberisedteamCPointsEarned){
+            if(numberisedteamAGoalDiff   > numberisedteamCGoalDiff){
+            alert("Team A is First")
+        }
+    }
+
+        else if(numberisedteamAPointsEarned == numberisedteamDPointsEarned){
+            if(numberisedteamAGoalDiff > numberisedteamDGoalDiff){
+            alert("Team A is First")
+        }
+    }
+
+        else if(numberisedteamAPointsEarned == numberisedteamBPointsEarned){
+            if(numberisedteamAGoalDiff > numberisedteamBGoalDiff){
+            alert("Team A isFirst")
+        }
+    }
+
+        else if(numberisedteamBPointsEarned == numberisedteamAPointsEarned){
+            if(numberisedteamBGoalDiff > numberisedteamAGoalDiff){
+            alert("Team B is First")
+        }
+    }
+        else if(numberisedteamBPointsEarned == numberisedteamCPointsEarned){
+            if(numberisedteamBGoalDiff > numberisedteamCGoalDiff){
+            alert("Team B is First")
+        }
+    }
+
+        else if(numberisedteamBPointsEarned == numberisedteamDPointsEarned){
+            if(numberisedteamBGoalDiff > numberisedteamDGoalDiff){
+            alert("Team B is First")
+        }
+    }
+
+        else if(numberisedteamCPointsEarned == numberisedteamAPointsEarned){
+            if(numberisedteamCGoalDiff > numberisedteamAGoalDiff){
+            alert("Team C is First")
+        }
+    }
+
+        else if(numberisedteamCPointsEarned == numberisedteamBPointsEarned){
+            if(numberisedteamCGoalDiff > numberisedteamBGoalDiff){
+            alert("Team C is First")
+        }
+    }
+
+        else if(numberisedteamCPointsEarned == numberisedteamDPointsEarned){
+            if(numberisedteamCGoalDiff > numberisedteamDGoalDiff){
+            alert("Team C is First")
+        }
+    }
+
+        else if(numberisedteamDPointsEarned == numberisedteamAPointsEarned){
+            if(numberisedteamDGoalDiff > numberisedteamAGoalDiff){
+            alert("Team D is First")
+        }
+    }
+
+        else if(numberisedteamDPointsEarned == numberisedteamBPointsEarned){
+            if(numberisedteamDGoalDiff > numberisedteamBGoalDiff){
+            alert("Team D is First")
+        }
+    }
+
+        else if(numberisedteamDPointsEarned == numberisedteamCPointsEarned){
+            if(numberisedteamDGoalDiff > numberisedteamCGoalDiff){
+            alert("Team D is First")
+        }
+    }
+//End
+
+// Equal points earned and goal difference
+
+        if(numberisedteamAPointsEarned == numberisedteamCPointsEarned){
+            if(numberisedteamAGoalDiff == numberisedteamCGoalDiff){
+            alert("Team A and Team C are First")
+        }
+    }
+
+        else if(numberisedteamAPointsEarned == numberisedteamDPointsEarned){
+            if(numberisedteamAGoalDiff == numberisedteamDGoalDiff){
+            alert("Team A and  Team D are First")
+        }
+    }
+
+        else if(numberisedteamAPointsEarned == numberisedteamBPointsEarned){
+            if(numberisedteamAGoalDiff == numberisedteamBGoalDiff){
+            alert("Team A and Team B are First")
+        }
+    }
+
+        else if(numberisedteamBPointsEarned == numberisedteamCPointsEarned){
+            if(numberisedteamBGoalDiff == numberisedteamCGoalDiff){
+            alert("Team B and C are First")
+        }
+    }
+
+        else if(numberisedteamBPointsEarned == numberisedteamDPointsEarned){
+            if(numberisedteamBGoalDiff == numberisedteamDGoalDiff){
+            alert("Team B and D are First")
+        }
+    }
+
+        else if(numberisedteamCPointsEarned == numberisedteamDPointsEarned){
+            if(numberisedteamCGoalDiff == numberisedteamDGoalDiff){
+            alert("Team C and D First")
+        }
+    }
+//End
+
+        else if((teamBPointsEarned > teamAPointsEarned) && (teamBPointsEarned > teamCPointsEarned) && (teamBPointsEarned > teamDPointsEarned)){
+            alert("Team B is First")
+        }
+
+        else if((teamCPointsEarned > teamAPointsEarned) && (teamCPointsEarned > teamBPointsEarned) && (teamCPointsEarned > teamDPointsEarned)){
+            alert("Team C is First")
+        } 
+
+        else if((teamDPointsEarned > teamAPointsEarned) && (teamDPointsEarned > teamBPointsEarned ) && (teamDPointsEarned > teamAPointsEarned)){
+            alert("Team D is First")
+        }
+
+        else{
+            alert("Team D is First")
+        }
+
+}
+else{
+    alert("Application exited");
+}
+}
+
+else{
+    alert("Application exited");
+}
+
+    </script>
+</html>

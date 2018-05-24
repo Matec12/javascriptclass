@@ -1,0 +1,101 @@
+
+<html>
+<head>
+
+    
+</head>
+<body>
+<script>
+/*
+Whats the output of the code below
+
+    alert( null || 2 || undefined ); 
+    alert( alert(1) || 2 || alert(3) );  
+    alert( 1 && null && 2 ); 
+    alert( alert(1) && alert(2) ); 
+    alert( null || 2 && 3 || 4 ); 
+
+Write an “if” condition to check that `age` is between `14` and `90` inclusively.
+“Inclusively” means that `age` can reach the edges `14` or `90`.
+
+Write an `if` condition to check that `age` is NOT between 14 and 90 inclusively.
+Create two variants: the first one using NOT `!`, the second one – without it.
+
+Which of these `alert`s are going to execute?
+What will be the results of the expressions inside `if(...)`?
+
+    if (-1 || 0) alert( 'first' );
+    if (-1 && 0) alert( 'second' );
+    if (null || -1 && 1) alert( 'third' );
+*/
+
+//  || (OR)
+
+//console.log(false ||  false || true);
+
+// &&  (AND)
+
+//!
+/*notNumber=false;
+if(!notNumber)
+*/
+
+//ANSWERS
+
+/*
+1.
+
+alert( null || 2 || undefined ); // 2 (it is the first truthy value identified)
+alert( alert(1) || 2 || alert(3) ); // 1, 2
+alert( 1 && null && 2 ); // null (it is the first falsy value identified)
+alert( alert(1) && alert(2) ); // 1, undefined
+alert( null || 2 && 3 || 4 ); // 3
+
+2.
+
+if (age >= 14 && age<= 90);
+
+3.
+
+if (!age >= 14 && !age <= 90);
+
+if (!(age > 14) && age > 90);
+
+4.
+
+    if (-1 || 0) alert( 'first' ); // will execute(-1 is a truthy value), -1
+
+    if (-1 && 0) alert( 'second' ); // will not execute(0 is a falsy value), 0
+
+    if (null || -1 && 1) alert( 'third' ); will execute, 1.
+
+*/
+
+//Loops: while and for
+
+/*
+
+Recursion/Iteration/Looping
+
+
+
+while(logical statement==false){
+    //Statement to run
+    //
+    //
+    //
+    //
+}
+
+
+*/
+
+var count=0;
+ while(count<15){ 
+    count+=1;
+    console.log("Fetch bucket "+ count)
+}
+</script>
+    
+</body>
+</html>
