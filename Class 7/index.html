@@ -1,101 +1,159 @@
-
 <html>
+
 <head>
 
-    
+
 </head>
+
 <body>
-<script>
-/*
-Whats the output of the code below
+    <script>
+        /*
+                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                        Whats the output of the code below
 
-    alert( null || 2 || undefined ); 
-    alert( alert(1) || 2 || alert(3) );  
-    alert( 1 && null && 2 ); 
-    alert( alert(1) && alert(2) ); 
-    alert( null || 2 && 3 || 4 ); 
+                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                            alert( null || 2 || undefined ); 
+                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                            alert( alert(1) || 2 || alert(3) );  
+                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                            alert( 1 && null && 2 ); 
+                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                            alert( alert(1) && alert(2) ); 
+                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                            alert( null || 2 && 3 || 4 ); 
 
-Write an “if” condition to check that `age` is between `14` and `90` inclusively.
-“Inclusively” means that `age` can reach the edges `14` or `90`.
+                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                        Write an “if” condition to check that `age` is between `14` and `90` inclusively.
+                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                        “Inclusively” means that `age` can reach the edges `14` or `90`.
 
-Write an `if` condition to check that `age` is NOT between 14 and 90 inclusively.
-Create two variants: the first one using NOT `!`, the second one – without it.
+                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                        Write an `if` condition to check that `age` is NOT between 14 and 90 inclusively.
+                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                        Create two variants: the first one using NOT `!`, the second one – without it.
 
-Which of these `alert`s are going to execute?
-What will be the results of the expressions inside `if(...)`?
+                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                        Which of these `alert`s are going to execute?
+                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                        What will be the results of the expressions inside `if(...)`?
 
-    if (-1 || 0) alert( 'first' );
-    if (-1 && 0) alert( 'second' );
-    if (null || -1 && 1) alert( 'third' );
-*/
+                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                            if (-1 || 0) alert( 'first' );
+                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                            if (-1 && 0) alert( 'second' );
+                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                            if (null || -1 && 1) alert( 'third' );
+                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                        */
 
-//  || (OR)
+        //  || (OR)
 
-//console.log(false ||  false || true);
+        //console.log(false ||  false || true);
 
-// &&  (AND)
+        // &&  (AND)
 
-//!
-/*notNumber=false;
-if(!notNumber)
-*/
+        //!
+        /*notNumber=false;
+        if(!notNumber)
+        */
 
-//ANSWERS
+        //ANSWERS
 
-/*
-1.
+        /*
+        1.
 
-alert( null || 2 || undefined ); // 2 (it is the first truthy value identified)
-alert( alert(1) || 2 || alert(3) ); // 1, 2
-alert( 1 && null && 2 ); // null (it is the first falsy value identified)
-alert( alert(1) && alert(2) ); // 1, undefined
-alert( null || 2 && 3 || 4 ); // 3
+        alert( null || 2 || undefined ); // 2 (it is the first truthy value identified)
+        alert( alert(1) || 2 || alert(3) ); // 1, 2
+        alert( 1 && null && 2 ); // null (it is the first falsy value identified)
+        alert( alert(1) && alert(2) ); // 1, undefined
+        alert( null || 2 && 3 || 4 ); // 3
 
-2.
+        2.
 
-if (age >= 14 && age<= 90);
+        if (age >= 14 && age<= 90);
 
-3.
+        3.
 
-if (!age >= 14 && !age <= 90);
+        if (!age >= 14 && !age <= 90);
 
-if (!(age > 14) && age > 90);
+        if (!(age > 14) && age > 90);
 
-4.
+        4.
 
-    if (-1 || 0) alert( 'first' ); // will execute(-1 is a truthy value), -1
+            if (-1 || 0) alert( 'first' ); // will execute(-1 is a truthy value), -1
 
-    if (-1 && 0) alert( 'second' ); // will not execute(0 is a falsy value), 0
+            if (-1 && 0) alert( 'second' ); // will not execute(0 is a falsy value), 0
 
-    if (null || -1 && 1) alert( 'third' ); will execute, 1.
+            if (null || -1 && 1) alert( 'third' ); will execute, 1.
 
-*/
+        */
 
-//Loops: while and for
+        //Loops: while and for
 
-/*
+        /*
 
-Recursion/Iteration/Looping
-
-
-
-while(logical statement==false){
-    //Statement to run
-    //
-    //
-    //
-    //
-}
+        Recursion/Iteration/Looping
 
 
-*/
 
-var count=0;
- while(count<15){ 
-    count+=1;
-    console.log("Fetch bucket "+ count)
-}
-</script>
-    
+        while(logical statement==false){
+            //Statement to run
+            //
+            //
+            //
+            //
+        }
+
+
+        */
+
+        //Do while
+
+        /*
+
+        while(logical expression){
+            statement to execute
+        }
+
+        do{
+
+        }
+        while()
+        */
+
+        /*let count = 1;
+        do {
+            console.log("Fetch bucket " + count);
+            count++
+        } while (count < 5)
+
+        */
+
+        /*
+
+
+        here: for (let i = 2; i < 100; i++) {
+            for (let j = 2; j < i; j++) {
+                if (i % j == 0) {
+                    continue here;
+                }
+            }
+            console.log(i);
+        }
+
+        */
+
+        /*
+
+        - Write a code using the for loop  to print the times table of any giving number (x) to n.
+
+        So the output where x=2 and n=10 , should be 
+
+        2*1 = 2;
+        2*2=4;
+        2*3=6;
+        2*4=8;
+        …….
+        …….
+
+
+        - Modify the code above to check if the result of any multiplication equals 24, 
+        if yes exit  the loop otherwise keep printing the result of the multiplication . 
+
+        */
+        var x = +prompt("input first number", 0)
+        var n = +prompt("input second number", 0)
+        for (var count = 1; count <= n; count++) {
+            if (x * count == 24)
+                continue
+            console.log(x + "*" + count + " = " + (x * count))
+        }
+    </script>
+
 </body>
+
 </html>

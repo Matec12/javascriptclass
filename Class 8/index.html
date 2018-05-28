@@ -1,0 +1,147 @@
+<html>
+
+
+<head>
+
+</head>
+
+<body>
+
+</body>
+<script>
+    //Synatx
+
+    /*switch (value) {
+        case "exp":
+            statement;
+            break;
+        case "exp2":
+            statement;
+            break;
+        case "exp3":
+            statement;
+            break;
+        case "exp4":
+            statement;
+            break;
+
+        default:
+            "finally"
+    }*/
+
+
+
+    // switch (21 / 3) {
+    //     case 4:
+    //         console.log("here is 4")
+    //         break;
+    //     case 5:
+    //     case 6:
+    //     case 7:
+    //         console.log("here is 5,6,7")
+    //         break;
+    //     default:
+    //         console.log("i cant search further")
+    // }
+
+    /*Exercises
+
+    - Rewrite the code below using if..else
+        switch (browser) {
+          case 'Edge':
+            alert( "You've got the Edge!" );
+            break;
+        
+          case 'Chrome':
+          case 'Firefox':
+          case 'Safari':
+          case 'Opera':
+            alert( 'Okay we support these browsers too' );
+            break;
+        
+          default:
+            alert( 'We hope that this page looks ok!' );
+        }
+
+
+    - Rewrite if statement into switch
+
+
+        let a = +prompt('a?', '');
+        
+        if (a == 0) {
+          alert( 0 );
+        }
+        if (a == 1) {
+          alert( 1 );
+        }
+        
+        if (a == 2 || a == 3) {
+          alert( '2,3' );
+        }
+
+    */
+
+    //ANSWERS
+
+    // 1.
+
+    // var Browser = prompt("Browser");
+    // if (name == "Edge") {
+    //     alert("You've got the Edge!");
+    // } else if (Browser == "Chrome") {
+    //     alert('Okay we support these browsers too');
+    // } else if (Browser == "Firefox") {
+    //     alert('Okay we support these browsers too');
+    // } else if (Browser == "Safari") {
+    //     alert('Okay we support these browsers too');
+    // } else if (Browser == "Opera") {
+    //     alert('Okay we support these browsers too');
+    // } else {
+    //     alert("We hope that this page looks ok!");
+    // }
+
+    // var Browser = prompt("Browser");
+    // if (Browser.toLowerCase() == "edge") {
+    //     alert("You've got the Edge!");
+    // } else if (Browser.toLowerCase() == "chrome" || Browser.toLowerCase() == "firefox" ||
+    //     Browser.toLowerCase() == "safari" || Browser.toLowerCase() == "opera") {
+    //     alert('Okay we support these browsers too');
+    // } else {
+    //     alert("We hope that this page looks ok!");
+    // }
+    /*
+
+    - Rewrite if statement into switch
+
+
+    let a = +prompt('a?', '');
+
+    if (a == 0) {
+      alert( 0 );
+    }
+    if (a == 1) {
+      alert( 1 );
+    }
+
+    if (a == 2 || a == 3) {
+      alert( '2,3' );
+    }
+
+    */
+    let a = +prompt('a?', '');
+    switch (a) {
+        case 0:
+            alert(0);
+            break;
+        case 1:
+            alert(1);
+            break;
+        case 2:
+        case 3:
+            alert("2, 3");
+            break;
+    }
+</script>
+
+</html>
