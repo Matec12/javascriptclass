@@ -61,6 +61,10 @@
                       Function Naming 
 
                   */
+    function AddTwoNumbers(firstNumber, secondNumber) {
+        let sum = firstNumber + secondNumber;
+        console.log(sum);
+    }              
 
     function MultiplyTwoNumbers(firstNumber, secondNumber) {
         let product = firstNumber * secondNumber;
@@ -79,7 +83,10 @@
 
     var x = +prompt("input first number", 0)
     var y = +prompt("input second number", 0)
-        if(confirm("*")){
+        if(confirm("+")){
+            AddTwoNumbers( x,y)
+        }
+        else if(confirm("*")){
             MultiplyTwoNumbers( x,y)
         }
         else if(confirm("/")){
