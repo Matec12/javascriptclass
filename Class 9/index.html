@@ -62,40 +62,68 @@
 
                   */
 
+
+    //Return from Function
+
+
+
+
+
+
     function AddTwoNumbers(firstNumber, secondNumber) {
         let sum = firstNumber + secondNumber;
-        console.log(sum);
+        console.clear();
+        return sum + 4;
     }
 
-    function MultiplyTwoNumbers(firstNumber, secondNumber) {
-        let product = firstNumber * secondNumber;
-        console.log(product);
+    function CheckVotingAge(age) {
+
+        switch (age) {
+            case 12:
+                return "You are too too young";
+            case 16:
+                return "You are two years away from voting";
+            case 18:
+                return "You are exactly ideal to vote";
+
+            default:
+                return "Go get your pvc";
+        }
     }
 
-    function DivideTwoNumbers(firstNumber, secondNumber) {
-        let quotient = firstNumber / secondNumber;
-        console.log(quotient);
-    }
-
-    function SubtractTwoNumbers(firstNumber, secondNumber) {
-        let difference = firstNumber - secondNumber;
+    var age = +prompt("Whats your age?")
+    var result = CheckVotingAge(age);
+    alert(result);
 
 
-        console.log(difference);
-    }
+    // function MultiplyTwoNumbers(firstNumber, secondNumber) {
+    //     let product = firstNumber * secondNumber;
+    //     console.log(product);
+    // }
 
-    var x = +prompt("input first number", 0)
-    var y = +prompt("input second number", 0)
-    if (confirm("+")) {
-        AddTwoNumbers(x, y)
-    } else if (confirm("*")) {
-        MultiplyTwoNumbers(x, y)
-    } else if (confirm("/")) {
-        DivideTwoNumbers(x, y)
+    // function DivideTwoNumbers(firstNumber, secondNumber) {
+    //     let quotient = firstNumber / secondNumber;
+    //     console.log(quotient);
+    // }
 
-    } else if (confirm("-")) {
-        SubtractTwoNumbers(x, y)
-    }
+    // function SubtractTwoNumbers(firstNumber, secondNumber) {
+    //     let difference = firstNumber - secondNumber;
+
+    //     console.log(difference);
+    // }
+
+    // var x = +prompt("input first number", 0)
+    // var y = +prompt("input second number", 0)
+    // if (confirm("+")) {
+    //     AddTwoNumbers(x, y)
+    // } else if (confirm("*")) {
+    //     MultiplyTwoNumbers(x, y)
+    // } else if (confirm("/")) {
+    //     DivideTwoNumbers(x, y)
+
+    // } else if (confirm("-")) {
+    //     SubtractTwoNumbers(x, y)
+    // }
 </script>
 
 </html>
