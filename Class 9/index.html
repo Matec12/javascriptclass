@@ -1,0 +1,95 @@
+<html>
+
+<head>
+
+</head>
+
+<body>
+
+</body>
+
+<script>
+    //Syntax
+
+
+
+    function FunctionName(x, y, z) {
+        //Statement to execute
+        //alert();
+        //3+3;
+
+        //x y z -Parameters
+    }
+
+
+
+
+    //Predefined functions
+    // alert(message);
+
+    // prompt(message);
+
+    // confirm(nes);
+
+
+    // var sum = 32;
+
+    // function AddTwoNumbers(firstNumber, secondNumber) {
+    //     let sum = firstNumber + secondNumber;
+    //     console.log(sum);
+    // }
+
+    // console.log(sum);
+
+    // let numberOne = 45,
+    //     numberTwo = 34;
+
+    // AddTwoNumbers(5, 6);
+
+    // AddTwoNumbers(45, 56);
+
+    // AddTwoNumbers(numberOne, numberTwo);
+
+    // console.log(sum);
+
+
+    /*
+                      Function Declarations/syntax
+                      Function Variables , outer,local,global
+                      Function parameters
+                      default values
+                      Function Naming 
+
+                  */
+
+    function MultiplyTwoNumbers(firstNumber, secondNumber) {
+        let product = firstNumber * secondNumber;
+        console.log(product);
+    }
+
+    function DivideTwoNumbers(firstNumber, secondNumber) {
+        let quotient = firstNumber / secondNumber;
+        console.log(quotient);
+    }
+
+    function SubtractTwoNumbers(firstNumber, secondNumber) {
+        let difference = firstNumber - secondNumber;
+        console.log(difference);
+    }
+
+    var x = +prompt("input first number", 0)
+    var y = +prompt("input second number", 0)
+        if(confirm("*")){
+            MultiplyTwoNumbers( x,y)
+        }
+        else if(confirm("/")){
+            DivideTwoNumbers(x,y)
+            
+        }
+        else if(confirm("-")){
+            SubtractTwoNumbers(x,y)
+        }
+
+</script>
+
+</html>
