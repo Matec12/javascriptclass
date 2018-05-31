@@ -70,30 +70,30 @@
 
 
 
-    function AddTwoNumbers(firstNumber, secondNumber) {
-        let sum = firstNumber + secondNumber;
-        console.clear();
-        return sum + 4;
-    }
+    // function AddTwoNumbers(firstNumber, secondNumber) {
+    //     let sum = firstNumber + secondNumber;
+    //     console.clear();
+    //     return sum + 4;
+    // }
 
-    function CheckVotingAge(age) {
+    // function CheckVotingAge(age) {
 
-        switch (age) {
-            case 12:
-                return "You are too too young";
-            case 16:
-                return "You are two years away from voting";
-            case 18:
-                return "You are exactly ideal to vote";
+    //     switch (age) {
+    //         case 12:
+    //             return "You are too too young";
+    //         case 16:
+    //             return "You are two years away from voting";
+    //         case 18:
+    //             return "You are exactly ideal to vote";
 
-            default:
-                return "Go get your pvc";
-        }
-    }
+    //         default:
+    //             return "Go get your pvc";
+    //     }
+    // }
 
-    var age = +prompt("Whats your age?")
-    var result = CheckVotingAge(age);
-    alert(result);
+    // var age = +prompt("Whats your age?")
+    // var result = CheckVotingAge(age);
+    // alert(result);
 
 
     // function MultiplyTwoNumbers(firstNumber, secondNumber) {
@@ -124,6 +124,30 @@
     // } else if (confirm("-")) {
     //     SubtractTwoNumbers(x, y)
     // }
+
+
+
+
+ 
+
+function CalculateQuadraticEquation(a, b, c) {
+    let root_partof_numerator = Math.sqrt(Math.pow(b, 2) - (4 * a * c));
+    let denominator = 2 * a;
+    let x = (-b + root_partof_numerator)/denominator;
+    let y = (-b - root_partof_numerator)/denominator;
+    return x + " , " + y;
+}   
+
+    var a = +prompt("input value for a", 0);
+    var b = +prompt("input value for b", 0);
+    var c = +prompt("input value for c", 0);
+    
+    CalculateQuadraticEquation(a, b, c);
+
+console.log(CalculateQuadraticEquation(a, b, c));
+
+
+
 </script>
 
 </html>
