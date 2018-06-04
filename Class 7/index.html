@@ -7,29 +7,24 @@
 
 <body>
     <script>
-        /*
-                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                Whats the output of the code below
+/*        
+        Whats the output of the code below
 
-                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                    alert( null || 2 || undefined ); 
-                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                    alert( alert(1) || 2 || alert(3) );  
-                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                    alert( 1 && null && 2 ); 
-                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                    alert( alert(1) && alert(2) ); 
-                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                    alert( null || 2 && 3 || 4 ); 
-
-                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                Write an “if” condition to check that `age` is between `14` and `90` inclusively.
-                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                “Inclusively” means that `age` can reach the edges `14` or `90`.
-
-                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                Write an `if` condition to check that `age` is NOT between 14 and 90 inclusively.
-                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                Create two variants: the first one using NOT `!`, the second one – without it.
-
-                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                Which of these `alert`s are going to execute?
-                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                What will be the results of the expressions inside `if(...)`?
-
-                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                    if (-1 || 0) alert( 'first' );
-                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                    if (-1 && 0) alert( 'second' );
-                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                    if (null || -1 && 1) alert( 'third' );
-                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                */
-
+alert( null || 2 || undefined ); 
+alert( alert(1) || 2 || alert(3) );  
+alert( 1 && null && 2 ); 
+alert( alert(1) && alert(2) ); 
+alert( null || 2 && 3 || 4 ); 
+Write an “if” condition to check that `age` is between `14` and `90` inclusively.
+“Inclusively” means that `age` can reach the edges `14` or `90`.
+Write an `if` condition to check that `age` is NOT between 14 and 90 inclusively.
+Create two variants: the first one using NOT `!`, the second one – without it.
+Which of these `alert`s are going to execute?
+What will be the results of the expressions inside `if(...)`?
+if (-1 || 0) alert( 'first' );
+if (-1 && 0) alert( 'second' );
+if (null || -1 && 1) alert( 'third' );
+*/
         //  || (OR)
 
         //console.log(false ||  false || true);
@@ -153,14 +148,14 @@
         //     console.log(x + "*" + count + " = " + (x * count))
         // }
 
-        var x = +prompt("input first number", 0)
-        var n = +prompt("input second number", 0)
-        for (var count = 1; count <= n; count++) {
-            if (x % count == 24)
-                continue
-            alert(x + "%" + count + " = " + (x % count))
-            console.log(x + "%" + count + " = " + (x % count))
-        }
+        // var x = +prompt("input first number", 0)
+        // var n = +prompt("input second number", 0)
+        // for (var count = 1; count <= n; count++) {
+        //     if (x % count == 24)
+        //         continue
+        //     alert(x + "%" + count + " = " + (x % count))
+        //     console.log(x + "%" + count + " = " + (x % count))
+        // }
     </script>
 
 </body>

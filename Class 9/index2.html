@@ -128,15 +128,26 @@
 
 
 
- 
+// QUADRATIC FORMULA ANSWER 1
 
 // function CalculateQuadraticEquation(a, b, c) {
-//     let root_partof_numerator = Math.sqrt(Math.pow(b, 2) - (4 * a * c));
+//     let root_partof_numerator = Math.sqrt(IsNotNegative(a, b, c));
 //     let denominator = 2 * a;
 //     let x = (-b + root_partof_numerator)/denominator;
 //     let y = (-b - root_partof_numerator)/denominator;
-//     return x + " , " + y;
-// }   
+//         return(x + " , " + y)
+// }
+
+// function IsNotNegative(a, b, c){
+//     let operation = Math.pow(b, 2) - (4 * a * c)
+//     do{
+//         return operation;
+//         operation++
+//     }
+//     while(operation < 0)  
+// }
+
+
 //     alert("User must input negative value for either a or c OR User must input value for a and c such that 4*a*c is less b**2")
 //     var a = +prompt("input value for a", 0);
 //     var b = +prompt("input value for b", 0);
@@ -144,6 +155,39 @@
     
 //     var result = CalculateQuadraticEquation(a, b, c)
 //     console.log(result);
+
+
+
+// QUADRATIC FORMULA ANSWER 2
+
+
+// function CalculateQuadraticEquation(a, b, c) {
+//     let root_partof_numerator = Math.sqrt(IsNotNegative(a, b, c));
+//     let denominator = 2 * a;
+//     let x = (-b + root_partof_numerator)/denominator;
+//     let y = (-b - root_partof_numerator)/denominator;
+//         return(x + " , " + y)
+// }
+
+// function IsNotNegative(a, b, c){
+//     let operation = Math.pow(b, 2) - (4 * a * c);
+//     while(operation){
+//         return operation;
+//         operation--
+//     }
+      
+// }
+
+
+//     alert("User must input negative value for either a or c OR User must input value for a and c such that 4*a*c is less b**2")
+//     var a = +prompt("input value for a", 0);
+//     var b = +prompt("input value for b", 0);
+//     var c = +prompt("input value for c", 0);
+    
+//     var result = CalculateQuadraticEquation(a, b, c)
+//     console.log(result);
+
+
 
 
 
@@ -157,7 +201,7 @@
 //    var numberizedValue = +value;
 //    for (let i = 2; i <=numberizedValue; i++) {
 //           if(IsPrime(i)){
-//               console.log(i);
+//             PrintToScreen(i);
 //           }
 //     }
 // }
@@ -168,65 +212,15 @@
 //          return false;
 //       }
 //     }
-//     return true; 
+//     return true;
+// }
+
+// function PrintToScreen(value){
+//     alert(value);
 // }
 
 // console.log(NumberChecker(10));
 
-/*
-
-- Exercise on Functions
-
-Write a function `min(a,b)` which returns the least of two numbers `a` and `b`.
-
-Write a function `pow(x,n)` that returns `x` in power `n`. Or, in other words, multiplies `x` by itself `n` times and returns the result.
-
-Create a web-page that prompts for `x` and `n`, and then shows the result of `pow(x,n)`
-
-
-Write a function that takes a name and greet the person with an alert saying “Hello {name}, ”
-
-*/
-// ANSWERS
-
-
-// function min(a,b){
-//     if (a<b){
-//         return a;
-//     }
-//     else{
-//         return b
-//     }
-// }
-
-// var a = +prompt("input value for a", 0)
-// var b = +prompt("input value for b", 0)
-// result = min(a,b)
-// console.log("minimum value " + " = " + result)
-
-
-
-// function pow(x,n){
-//     let result = Math.pow(x,n)
-//     return result
-// }
-
-// var x = +prompt("input value for x", 0);
-// var n = +prompt("input value for n", 0);
-// result = pow(x,n);
-// alert(result)
-
-
-
-
-
-// function DisplayMessage() {
-//   let message = 'Hello, ' + userName;
-//   alert(message);
-// }
-
-// var userName = prompt("input username", "Username");
-// DisplayMessage();
 </script>
 
 </html>
