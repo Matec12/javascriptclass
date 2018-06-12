@@ -1,0 +1,226 @@
+<html>
+<head>
+
+</head>
+<body>
+    
+</body>
+<script>
+/*
+    
+Assigments
+
+
+1. Create a Function called CalculateMultiples, that takes in two 
+parameters x and n, where x is the number in which we want to 
+calculate it’s multiples and n the number of multiples to be 
+calculated. The returned value should be a comma separated lists 
+of all multiples from 
+i..n. E.g if x=2 and n=5, the function should return 2,4,6,8,10
+
+2. Create a variant of the above function as first an arrow 
+function and an expressive function 
+                     
+3. Modify the Function (1) above not to includes the value of x 
+as part of its multiple.s N.B Make this a separate function 
+g
+
+4. If Rosaline made Y  amount  of donuts. She put 8 donuts into 
+each box. Write a function that takes the number of donuts made 
+(Y) and the boxes available as parameter and do the following.
+- How many boxes of donuts were fully packed,
+- How many donuts were left over?
+- If she sold each box for $3, how much money would she receive?
+
+
+5.Jeremey bought 8  Pens and  5 Notebooks, the cost of 8 pens is the same as the 
+cost of 5 notebooks. If each notebook costs 30 cents more 
+than each pen, write a function that determine the individual cost of a 
+pen and notebook
+
+
+6. In a football field, there are always X amount of men, 0.075X amount of 
+women and 0.75X amount of children as spectators.  Create a function 
+that will always determine the actual number of men, women and children 
+given Y as the total number of spectators viewing the match
+
+7. Create a function FirstFactorial(num) take the num parameter being 
+passed and return the factorial of it (e.g. if num = 4, return 
+(4 * 3 * 2 * 1)). For the test cases, the range will be between 1 and 18 
+and the input will always be an integer. 
+
+8. Create a function called Interest Calculator and use to solve the 
+following problems
+- Find the amount of interest earned by $8,000 invested at a 5% annual 
+simple interest rate for 1 year
+
+    */
+
+
+// ANSWERS
+
+
+//CalculateMultiples
+
+
+// function CalculateMultiples(x, n){
+//     var csv=""
+//     for (var count = 1; count <= n; count++) {
+//        // console.log(x * count)
+//         csv  +=     (x*count) + ","
+// }
+// console.log(csv)
+// }
+
+//  var x = +prompt("input first number", 0);
+//  var n = +prompt("input second number", 0);
+
+//   CalculateMultiples(x, n);
+
+
+//   var CalculateMultiples = function(x, n){
+//     var csv=""
+//     for (var count = 1; count <= n; count++) {
+//         csv  +=     (x*count) + ","
+// }
+// console.log(csv)
+// }
+
+//  var x = +prompt("input first number", 0);
+//  var n = +prompt("input second number", 0);
+
+//  CalculateMultiples(x, n);
+
+
+//   var CalculateMultiples = (x, n) => {
+//     var csv=""
+//     for (var count = 1; count <= n; count++) {
+//         csv  +=     (x*count) + ","
+// }
+// console.log(csv)
+// }
+
+//  var x = +prompt("input first number", 0);
+//  var n = +prompt("input second number", 0);
+
+//   CalculateMultiples(x, n);
+
+
+// function CalculateMultiples(x, n){
+//     var csv=""
+//     for (var count = 1; count <= n; count++) {
+//         if(x * count == x)
+//         continue
+//         csv  +=   (x*count) + ","
+// }
+// console.log(csv)
+// }
+
+//  var x = +prompt("input first number", 0);
+//  var n = +prompt("input second number", 0);
+
+//   CalculateMultiples(x, n);
+
+   
+//DONUTS AND BOXES
+
+function CalcNumberOfBoxes(Y){
+  let numberOfDonuts = Y;
+  let numberOfBoxes =  (numberOfDonuts -(numberOfDonuts%8)) / 8;
+  let remainingdonuts = numberOfDonuts % 8;
+  let totalMoney = numberOfBoxes * 3
+  return numberOfBoxes + ", " + remainingdonuts + ", " + "$" + totalMoney;
+}
+
+
+var Y = +prompt("input number of donuts", 0)
+
+var result = CalcNumberOfBoxes(Y)
+console.log(result)
+
+
+
+
+
+
+// CALCINDIVIDUALCOST
+
+// function CalcIndividualCost(costOf8P, costOf5N){    
+//     let P = costOf8P/8 ;
+//     let N =costOf5N/5;
+//     if( costOf8P==costOf5N && N ==  P + 30){
+//         return P + ", " + N
+//     }
+// else{
+//     return "incorrect input"
+// }
+// }
+
+// var costOf8P = +prompt("value");
+// var costOf5N = +prompt("value");
+
+// var value = CalcIndividualCost(costOf8P, costOf5N)
+
+// console.log(value)
+
+
+// function CalcNumberOfSpectators(value){
+//   let Y = value
+//     let amount_of_men= 0.175 * value
+//     let amount_of_women= 0.075 * value;
+//     let amount_of_children= 0.75 *  value;
+//     return amount_of_men +  ","  + amount_of_women + "," + amount_of_children
+// }
+
+//  var value= +prompt("Input value ", 0);
+
+// var value= CalcNumberOfSpectators(value);
+// console.log(value);
+
+
+
+// function CalcNumberOfSpectators(value){
+//   let Y = +value 
+//     let amount_of_men= +X;
+//     let amount_of_women= 0.075 * amount_of_men;
+//     let amount_of_children= 0.75 * amount_of_men;
+//     if( Y = amount_of_men + amount_of_women + amount_of_children){
+//     return amount_of_men +  ","  + amount_of_women + "," + amount_of_children
+// }
+// }
+//  var value= +prompt("Input value for value", 0);
+
+// var result= CalcNumberOfSpectators(value);
+// console.log(result);
+
+
+
+
+// function FirstFactorial (num){
+//   a = 1;
+//   for(i=1;i<=num;i++){
+//     a = a*i;
+//   }
+//   return a
+// }
+
+// var value = FirstFactorial (5);
+// console.log (value);
+
+
+
+// function InterestCalculator(P, R, T,) {
+//     let numerator = P * R * T;
+//     let denominator = 100;
+//     let x = numerator/denominator;
+//     return "$" + x 
+// }  
+
+// var P= +prompt("Input value for Principal", 0);
+// var R= +pro][                                                                                                                                                                          mpt("Input value for Rate", 0);
+// var T= +prompt("Input value for TIme", 0)
+
+// var value = InterestCalculator(P, R, T);
+// console.log(value);
+</script>
+</html>

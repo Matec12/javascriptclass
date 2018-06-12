@@ -1,0 +1,212 @@
+<html>
+    <head>
+
+    </head>
+    <body>
+        
+    </body>
+    <script>
+/*
+- Function Expression
+- Callback functions
+- Arrow Functions
+*/
+
+function AddTwoNumbers(a,b){
+    return a+b;
+}
+
+var addTwoNumbers=function(a,b){
+    return a+b;
+}
+
+console.log(AddTwoNumbers(1,2));
+
+console.log(addTwoNumbers(2,3))
+
+console.log(addTwoNumbers)
+
+
+//Callback Functions
+
+//Calling and callee
+
+function UserIntents(message,displayMessage){
+    var response = confirm(message);
+    if(response){
+       displayMessage("User clicked yes",toCapital)
+    }
+    else{
+        displayMessage("User clicked no",toCapital)
+    }
+}
+
+function DisplayMessage(display,myCapital){
+    alert(myCapital(display))
+}
+
+var toCapital = (data)=>{return data.toUpperCase()};
+UserIntents("Quit application?",DisplayMessage);
+
+//Arrow functions
+
+// (args,args1,args2) => {
+//  //Do anything
+// }
+
+
+var multiplyTwoNumbers = (a,b) => {
+    return a * b;
+}
+
+console.log(multiplyTwoNumbers(23,4))
+
+
+// function UserIntents(message,displayMessage){
+//     var response = confirm(message);
+//     if(response){
+//        displayMessage("User clicked yes",(data)=>{return data.toUpperCase()})
+//     }
+//     else{
+//         displayMessage("User clicked no",(data)=>{return data.toUpperCase()})
+//     }
+// }
+
+// function DisplayMessage(display,myCapital){
+//     alert(myCapital(display))
+// }
+
+// UserIntents("Quit application?",DisplayMessage);
+
+
+// function UserIntents(message,displayMessage){
+//     var response = confirm(message);
+//     if(response){
+//        displayMessage("User clicked yes",(toCapital))
+//     }
+//     else{
+//         displayMessage("User clicked no",toCapital)
+//     }
+// }
+
+// function DisplayMessage(display,toCapital){
+//     alert(toCapital(display))
+// }
+// function toCapital(message){
+//     return message.toUpperCase();
+// }
+
+// console.log(toCapital("my name is Hussein"))
+// UserIntents("Quit application?",DisplayMessage);
+
+
+// function UserIntents(message,displayMessage){
+//     var response = confirm(message);
+//     if(response){
+//        displayMessage("User clicked yes")
+//     }
+//     else{
+//         displayMessage("User clicked no")
+//     }
+// }
+
+// function DisplayMessage(display,toCapital){
+//     alert(toCapital(message))
+// }
+
+// UserIntents("Quit application?",DisplayMessage);
+
+
+
+// function UserIntents(message,displayMessage){
+//     var response = confirm(message);
+//     if(response){
+//        displayMessage("User clicked yes")
+//     }
+//     else{
+//         displayMessage("User clicked no")
+//     }
+// }
+
+// function DisplayMessage(display,toCapital){
+//     alert(display)
+// }
+
+// UserIntents("Quit application?",DisplayMessage);
+
+
+// function UserIntents(message,displayMessgae){
+//     var response = confirm(message);
+//     if(response){
+//        displayMessgae("User clicked yes")
+//     }
+//     else{
+//         displayMessgae("User clicked no")
+//     }
+// }
+
+// function DisplayMessage(display){
+//     alert(display)
+// }
+
+
+// UserIntents("Quit application?",DisplayMessageYes,DisplayMessageNo);
+
+
+// function UserIntents(message,yes,no){
+//     var response = confirm(message);
+//     if(response){
+//         yes()
+//     }
+//     else{
+//         no();
+//     }
+// }
+
+// function DisplayMessage(display){
+//     alert(display)
+// }
+
+// UserIntents("Quit application?",DisplayMessageYes,DisplayMessageNo);
+
+
+
+// function UserIntents(message,yes,no){
+//     var response = confirm(message);
+//     if(response){
+//         yes()
+//     }
+//     else{
+//         no();
+//     }
+// }
+
+// function DisplayMessage(){
+//     alert("User clicked yes")
+// }
+
+// UserIntents("Quit application?",DisplayMessageYes,DisplayMessageNo);
+
+
+
+
+// function UserIntents(message,yes,no){
+//     var response = confirm(message);
+//     if(response){
+//         yes()
+//     }
+//     else{
+//         no();
+//     }
+// }
+
+// function DisplayMessageYes(){
+//     alert("User clicked yes")
+// }
+// function DisplayMessageNo(){
+//     alert("User clicked no")
+// }
+
+// UserIntents("Quit application?",DisplayMessageYes,DisplayMessageNo);
+    </script>
+</html>

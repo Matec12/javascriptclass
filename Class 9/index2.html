@@ -139,7 +139,7 @@
 // }
 
 // function IsNotNegative(a, b, c){
-//     let operation = Math.pow(b, 2) - (4 * a * c)
+//     let operation = Math.pow(b, 2) > (4 * a * c)
 //     do{
 //         return operation;
 //         operation++
@@ -221,6 +221,71 @@
 
 // console.log(NumberChecker(10));
 
+
+//Collect the value of a. b. c
+
+//Write a function to check if b^2 > 4*A*C
+
+//If true execute the quadratic formula
+
+//Else prompt the user to input new valuefor a,b.c
+
+function IsNotNegative(a,b,c){
+    return (b**2) > (4 * a * c);
+}
+
+function CalculateQuadraticEquation(a, b, c) {
+     let root_partof_numerator = Math.sqrt((b**2) - (4 * a * c));
+    let denominator = 2 * a;
+    let x = (-b + root_partof_numerator)/denominator;
+    let y = (-b - root_partof_numerator)/denominator;
+        return(x + " , " + y)
+}
+//  var a = +prompt("input value for a", 0);
+//  var b = +prompt("input value for b", 0);
+//  var c = +prompt("input value for c", 0);
+
+// while(!IsNotNegative(a,b,c)){
+//      a = +prompt("input value for a", 0);
+//     b = +prompt("input value for b", 0);
+//     c = +prompt("input value for c", 0);
+//  }  
+
+var attempts = 5,count = 0;
+
+ var a = +prompt("input value for a", 0);
+ var b = +prompt("input value for b", 0);
+ var c = +prompt("input value for c", 0);
+
+while(count<attempts && !IsNotNegative(a,b,c)){
+    a = +prompt("input value for a", 0);
+    b = +prompt("input value for b", 0);
+    c = +prompt("input value for c", 0);
+    count++;
+}
+
+if(!IsNotNegative(a,b,c) && attempts>=count){
+  alert("Application  Stopped")
+}
+else{
+var value= CalculateQuadraticEquation(a, b, c);
+console.log(value)}
+
+
+
+
+// var attempts = 5;
+// while (attempts > 0) {
+//     var c = +prompt("input value for c", 0);
+//   if (c == 2) {
+//     alert("correct answer");
+//     break;
+//   }
+//   attempts--;
+// }
+// if (attempts == 5) {
+//   alert("Incorrect input");
+// }
 </script>
 
 </html>
