@@ -124,19 +124,19 @@ simple interest rate for 1 year
    
 //DONUTS AND BOXES
 
-function CalcNumberOfBoxes(Y){
-  let numberOfDonuts = Y;
-  let numberOfBoxes =  (numberOfDonuts -(numberOfDonuts%8)) / 8;
-  let remainingdonuts = numberOfDonuts % 8;
-  let totalMoney = numberOfBoxes * 3
-  return numberOfBoxes + ", " + remainingdonuts + ", " + "$" + totalMoney;
-}
+// function CalcNumberOfBoxes(Y){
+//   let numberOfDonuts = Y;
+//   let numberOfBoxes =  (numberOfDonuts -(numberOfDonuts%8)) / 8;
+//   let remainingdonuts = numberOfDonuts % 8;
+//   let totalMoney = numberOfBoxes * 3
+//   return numberOfBoxes + ", " + remainingdonuts + ", " + "$" + totalMoney;
+// }
 
 
-var Y = +prompt("input number of donuts", 0)
+// var Y = +prompt("input number of donuts", 0)
 
-var result = CalcNumberOfBoxes(Y)
-console.log(result)
+// var result = CalcNumberOfBoxes(Y)
+// console.log(result)
 
 
 
@@ -164,18 +164,19 @@ console.log(result)
 // console.log(value)
 
 
-// function CalcNumberOfSpectators(value){
-//   let Y = value
-//     let amount_of_men= 0.175 * value
-//     let amount_of_women= 0.075 * value;
-//     let amount_of_children= 0.75 *  value;
-//     return amount_of_men +  ","  + amount_of_women + "," + amount_of_children
-// }
+function CalcNumberOfSpectators(value){
+    let Y = value
+    let amount_of_men= Math.round(0.175 * value) 
+    let amount_of_women=  Math.round(0.075 * value);
+    let amount_of_children= Math.round (0.75 *  value);
+    return "amount of men = " + amount_of_men  + ", " + "amount of women = "  +  amount_of_women +  ", " + "amount of children = " 
+    + amount_of_children
+}
 
-//  var value= +prompt("Input value ", 0);
+ var value= +prompt("Input value ", 0);
 
-// var value= CalcNumberOfSpectators(value);
-// console.log(value);
+var value= CalcNumberOfSpectators(value);
+console.log(value);
 
 
 
